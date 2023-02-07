@@ -1,0 +1,909 @@
+
+.width-control{
+    width: 80%;
+    margin: 0 auto;
+    /* background: white; */
+}
+
+nav{
+    width: 100%;
+    height: 6rem;
+    background: var(--color-primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color-white);
+    z-index: 4;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+    gap: 2rem;
+}
+
+.nav .nav-logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.nav .nav-logo .logo-img{
+    height: 4rem;
+    width: 5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .nav-logo .logo-img img{
+    height: 5rem;
+    width: 6rem;
+}
+
+.nav .nav-menu{
+    display: flex;
+}
+
+.nav .nav-menu ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav .nav-menu ul a{
+    color: var(--color-white);
+    font-size: 1rem;
+    margin-top: 6px;
+    transition: 300ms ease;
+}
+
+.nav .nav-menu ul a li:hover {
+    border-bottom: 2px solid var(--color-white);
+}
+
+
+
+@keyframes showProfile2 {
+    to {
+        top: 8rem;
+    }
+}
+
+.nav .nav-menu .error-message {
+    display: grid;
+    grid-template-columns: 5rem auto 3rem;
+    position: absolute;
+    gap: .7rem;
+    top: 14rem;
+    width: 32.6rem;
+    background: var(--color-white);
+    padding: .5rem;
+    display: none;
+    right: 14%;
+    font-size: 1.2rem;
+    z-index: 2;
+    animation: showProfile2 400ms ease forwards;
+    color: var(--color-dark);
+    box-shadow: var(--box-shadow);
+}
+
+.nav .nav-menu .success-message, .nav .nav-menu .loading-message {
+    display: grid;
+    grid-template-columns: 5rem auto 3rem;
+    position: absolute;
+    gap: .7rem;
+    top: 14rem;
+    width: 32.6rem;
+    background: var(--color-white);
+    padding: .5rem;
+    display: none;
+    z-index: 2;
+    color: var(--color-dark);
+    right: 14%;
+    font-size: 1.2rem;
+    animation: showProfile2 400ms ease forwards;
+    box-shadow: var(--box-shadow);
+}
+
+.nav .nav-menu .error-message .error, .nav .nav-menu .loading-message .error {
+    background: var(--color-danger);
+    color: var(--color-white);
+    text-align: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    font-size: 1.6rem;
+}
+
+.nav .nav-menu .loading-message .error{
+    background: var(--color-success);
+    height: 5.5rem;
+    width: 5rem;
+}
+
+.nav .nav-menu .loading-message .error .circle{
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: .5rem solid #26624e;
+    border-right-color: var(--color-white);
+    animation: loading-anime 2s linear infinite;
+}
+
+@keyframes loading-anime {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.nav .nav-menu .success-message .success {
+    background: var(--color-success);
+    color: var(--color-white);
+    text-align: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+}
+
+.nav .nav-menu .error-message .error span,
+.nav .nav-menu .success-message .success span {
+    margin-top: 1.2rem;
+    font-size: 1.9rem;
+}
+
+.nav .nav-menu .error-message .message,
+.nav .nav-menu .success-message .message {
+    padding: .5rem;
+}
+
+.nav .nav-menu .error-message .close-message {
+    /* border-left: 2px solid var(--color-info-dark); */
+    padding: .5rem;
+    text-align: center;
+}
+
+
+/* MAIN */
+.main{
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+}
+
+.main2{
+top: 0;
+}
+
+.main .main-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main1{
+    grid-template-columns: 1fr;
+}
+
+.main .main-section .right-side{
+    padding: 4rem;
+}
+
+.main .main-section .right-side .form-wrap{
+    background: var(--color-white);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    box-shadow: var(--box-shadow);
+}
+.main .main-section .right-side .form-wrap:hover{
+    box-shadow: none;
+}
+
+.main .main-section .right-side .form-wrap small{
+    font-size: 0.9rem;
+}
+
+.main .main-section .right-side .form-wrap form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 8px;
+}
+
+.main .main-section .right-side .form-wrap form span{
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 1rem;
+    color: var(--color-white);
+    margin-bottom: -10px;
+}
+
+span.error{
+    background: var(--color-danger);
+    display: none;
+}
+
+span.success{
+    background: var(--color-success);
+}
+
+.main .main-section .right-side .form-wrap form input[type= text], input[type= password], input[type=email], input[type=tel], input[type=number], select, input[type=submit]{
+    padding: 11px;
+    border: 1px solid var(--color-primary-variant);
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+
+.main .main-section .right-side .form-wrap form select{
+    -webkit-appearance: menulist;
+}
+
+.main .main-section .right-side .form-wrap form input[type=submit]{
+    display: inline-block;
+    width: 9rem;
+    justify-self: center;
+    font-size: 1.1rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    transition: all 300ms ease;
+    border: none;
+    padding: 15px;
+}
+
+.main .main-section .right-side .form-wrap form input[type=submit]:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.bi{
+    margin-top: -3.7rem;
+    font-size: 1.5rem;
+    margin-left: 23.7rem;
+    width: 5rem;
+}
+
+
+/* END OF MAIN */
+
+
+/* FOOOTER */
+footer{
+    width: 100%;
+    background: var(--color-primary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--color-white);
+    padding-bottom: 7px;
+}
+
+footer .nav .nav-logo .logo-img{
+    width: 3rem;
+    height: 3rem;
+}
+
+footer .nav .nav-logo .logo-img img{
+    width: 4rem;
+    height: 4rem;
+}
+/* FOOOTER */
+
+
+/* PATIENT PROFILE DISPLAY */
+.patient-profile{
+    position: absolute;
+    top: 7rem;
+    height: 5rem;
+    width: 100%;
+}
+
+.patient-profile .width-control .h2{
+    margin-bottom: -3rem;
+}
+
+.pat-profile{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    /* background: red; */
+}
+
+.pat-profile .patient-left{
+    padding: 1rem;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-rows: 50% 45%;
+    gap: 1rem;
+}
+
+.pat-profile .patient-left h2{
+    padding-bottom: -1rem;
+}
+
+.pat-profile .patient-left .patient-photo{
+    padding: 1.6rem 1.2rem;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    text-align: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.pat-profile .patient-left .patient-photo:hover{
+        box-shadow: none;
+}
+
+.pat-profile .patient-left .patient-photo h2{
+    font-size: 1rem;
+}
+
+.pat-profile .patient-left .patient-photo p{
+    font-weight: 600;
+}
+
+
+
+.pat-profile .patient-left .patient-photo .profile-photo{
+    height: 8rem;
+    width: 8rem;
+    border-radius: var(--card-border-radius);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.pat-profile .patient-left .patient-details{
+    background: var(--color-white);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+        transition: all 300ms ease;
+}
+
+.pat-profile .patient-left .patient-details:hover{
+    box-shadow: none;
+}
+
+.pat-profile .patient-left .patient-details h3{
+    margin-bottom: 0.5rem;
+}
+
+.pat-profile .patient-left .patient-details .info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.pat-profile .patient-left .patient-details .info span:nth-child(odd){
+    font-weight: 600;
+}
+
+.pat-profile .patient-right {
+    padding: 2rem;
+    padding-left: 0;
+}
+
+.pat-profile .patient-right .info2{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.pat-profile .patient-right .info2 .infos{
+    padding: 2rem;
+    padding-left: 2rem;
+    text-align: start;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    border-radius: var(--card-border-radius);
+}
+
+.pat-profile .patient-right .info2 .infos:hover{
+    box-shadow: none;
+}
+
+.pat-profile .patient-right .info2 .infos span{
+    color: var(--color-danger);
+    font-size: 2.2rem;
+}
+
+.pat-profile .patient-right .info2 .infos h3>span{
+    font-size: 1.6rem;
+    color: var(--color-dark);
+
+}
+
+
+
+
+/* PATIENT PROFILE DISPLAY */
+
+
+
+/* BLOGS */
+.main .blog_wrap{
+    background: var(--color-white);
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.main .h1{
+    text-align: center;
+}
+
+.main .blog_wrap .blog{
+    background: var(--color-light);
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .blog_wrap .blog .blog_stat{
+    background: var(--color-danger);
+    /* display: flex; */
+    position: absolute;
+    right: -8rem;
+    gap: 1rem;
+    color: var(--color-white);
+    padding: .7rem;
+    animation: comslide 400ms ease-in forwards;
+    display: none;
+}
+
+@keyframes comslide {
+    to {
+        right: 0;
+    }
+}
+
+.main .blog_wrap .blog .blog_stat .blog_stat1{
+    display: flex;
+    gap: .5rem;
+}
+
+.main .blog_wrap .blog:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.main .blog_wrap .blog img{
+    height: 24rem;
+    width: 24.8rem;
+}
+
+.main .blog_wrap .blog .blog_details{
+    padding: 1rem;
+}
+
+.main .blog_wrap .blog .blog_details p{
+    margin-top: .7rem;
+        color: var(--color-primary);
+}
+
+.main .width-control1{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.main .width-control1 .blog_head{
+    margin-bottom: 1rem;
+}
+
+.main .width-control1 .blog_head h1{
+    line-height: 1.2;
+    margin-bottom: .4rem;
+}
+
+.main .width-control1 .blog_head p{
+    color: var(--color-danger);
+    font-weight: 600;
+}
+
+.main .width-control1 .blog_head .who{
+    color: var(--color-primary);
+}
+
+.main .width-control1 .blog_body{
+    background: var(--color-white);
+    padding: 1rem;
+}
+
+.main .width-control1 .blog_body img{
+    height: 25rem;
+    width: 25rem;
+    float: left;
+    margin-right: 1.5rem;
+}
+
+.main .width-control1 .blog_body p{
+    font-size: 1.1rem;
+    float: none;
+    text-align: justify;
+}
+
+
+.main .width-control1 .related_posts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+}
+
+.main .width-control1 .related_posts .blog {
+    background: var(--color-light);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main .width-control1 .related_posts .blog:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.main .width-control1 .related_posts .blog img {
+    height: 12rem;
+    width: 13rem;
+    justify-self: center;
+}
+
+.main .width-control1 .related_posts .blog .blog_details {
+    padding: 1rem;
+}
+
+.main .width-control1 .related_posts .blog .blog_details p {
+    margin-top: .7rem;
+    color: var(--color-primary);
+}
+
+.main .width-control1 .breaker {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main .comments{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    background: var(--color-white);
+    padding: 1rem 10rem;
+}
+
+.main .comments .add_comment{
+    padding: 0 3rem;
+}
+
+.main .comments form{
+    padding: 1rem 3rem;
+    background: var(--color-light);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.main .comments form .comment_error, .main .comments form .comment_success, #enquiryform .comment_success ,
+#enquiryform .comment_error{
+    width: 100%;
+    background: var(--color-danger);
+    color: var(--color-white);
+    padding: .5rem;
+    border-radius: .3rem;
+    /* font-weight: 600; */
+    font-size: .8rem;
+    text-align: center;
+    display: none;
+}
+
+.main .comments form .comment_success, #enquiryform .comment_success{
+    background: var(--color-success);
+}
+
+.main .comments form label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main .comments form label p{
+    font-size: 1rem;
+}
+
+.main .comments form input, .main .comments form textarea{
+    padding: .5rem;
+}
+
+.main .comments form input[type=submit]{
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+}
+
+.main .comments form input[type=submit]:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.main .comments .view_comments .comment_wrap{
+    background: var(--color-light);
+    padding: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .7rem;
+    overflow: auto;
+    max-height: 22.5rem;
+}
+
+.main .comments .view_comments .comment_wrap .comment{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: var(--color-white);
+    padding: .7rem;
+    gap: .7rem;
+    box-shadow: var(--box-shadow);
+    /* min-height: 2rem; */
+}
+
+.main .comments .view_comments .comment_wrap .comment .commenter{
+    text-align: right;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+
+/* BLOGS */
+
+/* OUR SERVICES */
+.main .width-control .header{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.main .width-control .services_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.main .width-control .services_wrapper .service{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: var(--color-white);
+}
+
+.main .width-control .services_wrapper .service img{
+    width: 20rem;
+    height: 19rem;
+}
+
+.main .width-control .services_wrapper .service:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.main .width-control .services_wrapper .service .service_detail{
+    padding: 1rem;
+}
+
+.main .width-control .services_wrapper .service .service_detail button{
+    border: none;
+    border-bottom: 3px solid var(--color-primary);
+    background: none;
+    margin-top: .7rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: 200ms ease-in;
+}
+
+.main .width-control .services_wrapper .service .service_detail button:hover{
+    letter-spacing: 2px;
+}
+
+
+
+
+/* OUR SERVICES */
+
+/* CONTACT US */
+.main .bg-big{
+    height: 80vh;
+    justify-content: center;
+}
+
+.main .bg-big .textwrap{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 10rem;
+    z-index: 4;
+}
+
+.main .bg-big .textwrap .text-on-img{
+    margin: 0 auto;
+    width: 60%;
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+.main .bg-big .cover_up{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    background: #338ab366;
+}
+
+.main .contact-wrap .contact-container{
+    width: 65%;
+    margin: 0 auto;
+    background: var(--color-background);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: -6rem;
+    z-index: 6;
+    position: relative;
+}
+
+.main .contact-wrap .contact-container .contacts{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    height: 60%;
+}
+
+.main .contact-wrap .contact-container .contacts .contact{
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 1rem;
+}
+
+.main .contact-wrap .contact-container .contacts .contact span{
+    text-align: center;
+    margin: auto;
+    border: 2px solid var(--color-primary);
+    padding: .5rem;
+    border-radius: 50%;
+    color: var(--color-primary);
+}
+
+.main .contact-wrap .contact-container .contacts .contact .contact-info{
+    padding: 1rem;
+}
+
+.main .contact-wrap .contact-container .contacts .contact .contact-info h3{
+    color: var(--color-primary);
+}
+
+.main .contact-wrap .contact-container .contact-form{
+    background: var(--color-white);
+    padding: 1rem;
+    text-align: center;
+}
+
+.main .contact-wrap .contact-container .contact-form form{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: .6rem;
+    gap: .7rem;
+}
+
+.main .contact-wrap .contact-container .contact-form form input[type=text], .main .contact-wrap .contact-container .contact-form form input[type=email], .main .contact-wrap .contact-container .contact-form form textarea{
+    padding: .5rem;
+}
+
+.main .contact-wrap .contact-container .contact-form form input[type=submit]{
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 0;
+}
+
+.main .contact-wrap .contact-container .contact-form form input[type=submit]:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.main .contact-wrap .contact-container .contact-form form label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* CONTACT US */
+
+
+
+/* MEDIA QUERRIES */
+/* MEDIA QUERRIES */
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .cover{
+        position: absolute;
+        /* height: 100%; */
+        width: 100vw;
+        background: rgb(255, 164, 164);
+        z-index: 100;
+        display: flex;
+        align-items: flex-start;
+
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .cover_box{
+        margin-top: 1rem;
+        width: 80%;
+        background: var(--color-white);
+        padding: 1rem;
+    }
+
+    .cover_head{
+        margin-bottom: .7rem;
+        
+    }
+
+        .cover_box span{
+            color: red;
+        }
+
+        .main {
+            display: none;
+           
+        }
+
+}
+
+
+/* @media screen and (max-width:600px) {
+
+        .cover {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100vh;
+                width: 100vw;
+                background: red;
+                z-index: 100;
+            }
+
+    .main .main-section {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+    .width-control {
+        width: 90%;
+        margin: 0 auto;
+        background: white;
+    }
+    body{
+        width: 100%;
+    }
+
+    nav .nav .nav-menu ul li{
+        font-size: .9rem;
+    }
+} */
+
+/* MEDIA QUERRIES */
+/* MEDIA QUERRIES */

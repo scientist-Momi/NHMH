@@ -1,0 +1,1299 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+.refresh{
+    padding: .7rem;
+    background: var(--color-success);
+    margin-top: .5rem;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+#myprofile .profile_page form{
+    background: var(--color-white);
+    padding: 2rem 1rem;
+    margin-top: .9rem;
+    box-shadow: var(--box-shadow);
+}
+
+#myprofile .profile_page form .profile-image{
+    border: 1px solid var(--color-dark);
+    padding: .9rem;
+    margin-bottom: .9rem;
+}
+
+#myprofile .profile_page form .profile-image img{
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: .45rem;
+}
+
+#myprofile .profile_page form .profile-image .inputfile{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#myprofile .profile_page form .profile-image .inputfile + label{
+    text-align: center;
+    font-size: .8rem;
+    padding: .5rem 0;
+    width: 7rem;
+    font-weight: 500;
+    color: var(--color-white);
+    background: var(--color-dark);
+    display: inline-block;
+    cursor: pointer;
+}
+
+#myprofile .profile_page form .profile-image .inputfile:focus + label{
+    background: red;
+}
+
+#myprofile .profile_page form .profile-image .inputfile+label:hover{
+    background: red;
+}
+
+#myprofile .profile_page form .row1{
+    margin-bottom: .45rem;
+}
+
+#myprofile .profile_page form .row1 .profile-personal{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+#myprofile .profile_page form .row1 .profile-personal label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#myprofile .profile_page form .row2 p, #myprofile .profile_page form .row13 p, #myprofile .profile_page form .row12 p {
+color: var(--color-danger);
+margin-top: .5rem;
+}
+
+#myprofile .profile_page form .row2 .account, #myprofile .profile_page form .row12 .med, #myprofile .profile_page form .row13 .nok{
+    margin-top: .1rem;
+    border: 1px solid var(--color-dark);
+    padding: .5rem;
+}
+
+
+#myprofile .profile_page form .row2 .account {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+#myprofile .profile_page form .row12 .med{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: .5rem;
+}
+
+#myprofile .profile_page form .row13 .nok{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+#myprofile .profile_page form .row2 .account label,  #myprofile .profile_page form .row12 .med label, #myprofile .profile_page form .row13 .nok label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#myprofile .profile_page form input[type=text], [type=password]{
+    padding: .7rem;
+}
+
+#myprofile .profile_page form .submit{
+    margin-top: 1.2rem;
+    padding: .9rem;
+    border: none;
+    background: var(--color-primary);
+    color: #fff;
+}
+
+#myprofile .profile_page form .submit:hover{
+    box-shadow: var(--box-shadow);
+}
+
+#add_staff .add-staff_page form{
+    background: var(--color-white);
+    padding: 2rem 1rem;
+    margin-top: .9rem;
+    box-shadow: var(--box-shadow);
+}
+
+#add_staff .add-staff_page form .row11{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+#add_staff .add-staff_page form .row11 label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#add_staff .add-staff_page form input, select {
+    padding: .7rem;
+}
+
+input[type="radio"] {
+    /* -webkit-appearance: radio; */
+    position: absolute;
+    opacity: 0;
+}
+
+#add_staff .add-staff_page form .row12{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 1rem;
+    padding: .7rem;
+    border: 1px solid var(--color-dark);
+}
+
+#add_staff .add-staff_page form .row12 .gender label .gent {
+    color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    padding: 7px;
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+#radios label {
+    position: relative;
+}
+
+input[class="male"]+.gent {
+    cursor: pointer;
+}
+
+input[class="female"]+.gent {
+    cursor: pointer;
+}
+
+input[class="male"]:hover+#alpha,
+input[class="male"]:checked+#alpha,
+input[class="male"]:focus+#alpha {
+    background: blue;
+    color: #fff;
+}
+
+input[class="female"]:hover+#beta,
+input[class="female"]:checked+#beta,
+input[class="female"]:focus+#beta {
+    background: rgb(176, 93, 107);
+    color: #fff;
+}
+
+#add_staff .add-staff_page form .row12 .photo .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#add_staff .add-staff_page form .row12 .photo .inputfile+label {
+    text-align: center;
+    font-size: .8rem;
+    margin-top: .45rem;
+    padding: .8rem ;
+    /* width: 7rem; */
+    font-weight: 500;
+    color: var(--color-white);
+    background: var(--color-dark);
+    display: inline-block;
+    cursor: pointer;
+}
+
+#add_staff .add-staff_page form .row12 .photo .inputfile:focus+label {
+    background: red;
+}
+
+#add_staff .add-staff_page form .row12 .photo .inputfile+label:hover {
+    background: red;
+}
+
+#add_staff .add-staff_page form .submit {
+    margin-top: 1.2rem;
+    padding: .9rem;
+    border: none;
+    background: var(--color-primary);
+    color: #fff;
+}
+
+#add_staff .add-staff_page form .submit:hover{
+    box-shadow: var(--box-shadow);
+}
+
+
+
+#allstaff .searchlabel, #allpatient .searchlabel, #searchmedrec .searchlabel{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+}
+
+#allstaff label .search, #allpatient label .search, #searchmedrec label .search{
+    padding: .45rem;
+    width: 30%;
+}
+
+#allstaff .all-staff-page, #allpatient .all-staff-page{
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: 1rem;
+}
+
+#allstaff .all-staff-page #optional_msg {
+    text-align: center;
+    display: none;
+}
+
+ #optional_msg {
+    text-align: center;
+    /* display: none; */
+}
+
+#allstaff .all-staff-page #optional_msg span{
+    font-size: 3.5rem;
+}
+
+ #optional_msg span{
+    font-size: 3.5rem;
+}
+
+
+
+
+#allstaff .all-staff-page .row20, #allpatient .all-staff-page .row20{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: .5rem;
+    border: 1px solid var(--color-dark);
+    padding: .7rem;
+    margin-bottom: .9rem;
+}
+
+#allstaff .all-staff-page .del,
+#allpatient .all-staff-page .del{
+    padding: 2.5rem 0;
+}
+
+#allstaff .all-staff-page .row20 .remove,
+#allpatient .all-staff-page .row20 .remove{
+    background: var(--color-danger);
+    text-align: center;
+    color: #fff;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+#allstaff .all-staff-page .row20 .remove:hover,
+#allpatient .all-staff-page .row20 .remove:hover{
+    box-shadow: var(--box-shadow);
+}
+
+#allstaff .all-staff-page .row20 textarea, #allpatient .all-staff-page .row20 textarea{
+    padding: .5rem;
+}
+
+#allstaff .all-staff-page .row20 img, #allpatient .all-staff-page .row20 img{
+    height: 7rem;
+    width: 7rem;
+}
+
+#allstaff .all-staff-page .row20 .row20a, #allpatient .all-staff-page .row20 .row20a{
+    display: grid;
+    gap: .25rem;
+}
+
+#allstaff .all-staff-page .row20 .row20a input, #allpatient .all-staff-page .row20 .row20a input{
+    padding: .35rem;
+}
+
+#searchpatient .searchlabel{
+    margin-top: .9rem;
+    padding: .5rem 1rem;
+    background: var(--color-white);
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+}
+
+#searchpatient .searchlabel .search{
+    padding: .5rem;
+    width: 30%;
+    margin-top: .35rem;
+}
+
+#searchpatient .patient_profile_view{
+    background: var(--color-white);
+    padding: 2rem 1rem;
+    margin-top: .9rem;
+    box-shadow: var(--box-shadow);
+    display: grid;
+    gap: 1rem;
+}
+
+#searchpatient .patient_profile_view>span{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+#searchpatient .patient_profile_view>p{
+    justify-self: center;
+}
+
+ .red{
+    color: red;
+}
+
+#searchpatient .patient_profile_view input{
+    padding: .6rem .2rem;
+}
+
+#searchpatient .patient_profile_view .row10 {
+    border: 1px solid var(--color-dark);
+    padding: .9rem;
+    margin-bottom: .9rem;
+}
+
+#searchpatient .patient_profile_view .row10 img {
+    width: 6rem;
+    height: 6rem;
+    /* margin-bottom: .45rem; */
+}
+
+/* #searchpatient .patient_profile_view .row11{
+    margin-top: .9rem;
+}
+
+#searchpatient .patient_profile_view .row11 h4{
+    margin-bottom: .5rem;
+} */
+
+#searchpatient .patient_profile_view .row11 .personal, #searchpatient .patient_profile_view .row12 .personal, #searchpatient .patient_profile_view .row13 .personal, #searchpatient .patient_profile_view .row14 .personal{
+    border: 1px solid var(--color-dark);
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .65rem;
+}
+
+#searchpatient .patient_profile_view .row12 .personal{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#searchpatient .patient_profile_view .row13 .personal{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#searchpatient .patient_profile_view .row11 .personal label, #searchpatient .patient_profile_view .row12 .personal label, #searchpatient .patient_profile_view .row13 .personal label, #searchpatient .patient_profile_view .row14 .personal label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+#createmed .medicalform{
+    background: var(--color-white);
+    padding: 2rem;
+    margin-top: .9rem;
+    box-shadow: var(--box-shadow);
+}
+
+#createmed .medicalform form{
+    display: grid;
+    gap: .9rem;
+}
+
+#createmed .medicalform form textarea{
+    padding: .5rem;
+}
+
+#patient_id{
+    padding: .5rem;
+}
+
+#createmed .medicalform form input[type=submit]{
+    padding: 1rem;
+    border: none;
+    background: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+#createmed .medicalform form input[type=submit]:hover{
+    box-shadow: var(--box-shadow);
+}
+
+#createmed .medicalform form .row20 label, #createmed .medicalform form .row21 label, #createmed .medicalform form .row22 label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+ .photo .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+ .photo .inputfile+label {
+    text-align: center;
+    font-size: .8rem;
+    padding: .5rem 0;
+    width: 10rem;
+    font-weight: 500;
+    color: var(--color-white);
+    background: var(--color-dark);
+    display: inline-block;
+    cursor: pointer;
+}
+
+ .photo .inputfile:focus+label {
+    background: red;
+}
+
+ .photo .inputfile+label:hover {
+    background: red;
+}
+
+
+
+
+#searchmedrec .medrecform {
+    background: var(--color-white);
+    padding: .9rem;
+    box-shadow: var(--box-shadow);
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#searchmedrec .searchlabel, #patient_finance .searchlabel {
+    margin-top: .9rem;
+    padding: .5rem 1rem;
+    background: var(--color-white);
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+}
+
+#searchmedrec .searchlabel .search, #patient_finance .searchlabel .search {
+    padding: .5rem;
+    width: 30%;
+    margin-top: .35rem;
+}
+
+#searchmedrec .medrecform>span, #patient_finance .patient_frecord>span {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+#searchmedrec .medrecform>p, #patient_finance .patient_frecord>p {
+    justify-self: center;
+}
+
+#searchmedrec .medrecform .row30{
+    margin-top: .9rem;
+    display: grid;
+    gap: .7rem;
+}
+
+#searchmedrec .medrecform .row30 .row30a{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    border: 1px solid var(--color-dark);
+    padding: .5rem;
+}
+
+#searchmedrec .medrecform .row30 .row30a input,
+#searchmedrec .medrecform .row30 .row30b textarea{
+    padding: .5rem;
+}
+
+#searchmedrec .medrecform .row30 .row30b{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    border: 1px solid var(--color-dark);
+    padding: .5rem;
+}
+
+#searchmedrec .medrecform .row30 .row30a label, #searchmedrec .medrecform .row30 .row30b label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#searchmedrec .medrecform .row30 .row30c{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    border: 1px solid var(--color-dark);
+    padding: .5rem;
+}
+
+#searchmedrec .medrecform .row30 .row30c img{
+    height: 16rem;
+    width: 16rem;
+}
+
+
+#newappointment .appointform {
+    background: var(--color-white);
+    padding: 2rem;
+    margin-top: .9rem;
+    box-shadow: var(--box-shadow);
+}
+
+#newappointment .appointform form {
+    display: grid;
+    gap: .9rem;
+}
+
+#newappointment .appointform form textarea {
+    padding: .5rem;
+}
+
+#newappointment .appointform form input[type=submit] {
+    padding: 1rem;
+    border: none;
+    background: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+#newappointment .appointform form input[type=submit]:hover {
+    box-shadow: var(--box-shadow);
+}
+
+#newappointment .appointform form .row20 label,
+#newappointment .appointform form .row21 label,
+#newappointment .appointform form .row22 label {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#newappointment .appointform form .row21{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 2rem;
+    border: 1px solid var(--color-dark);
+    padding: .9rem;
+}
+
+#newappointment .appointform form .row21 .date{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#newappointment .appointform form .row21 .appointtime .time{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+#newappointment .appointform form .row21 .appointtime .time label .gen {
+    color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    padding: .5rem 0;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+input[class="timer"]+.gen {
+    cursor: pointer;
+}
+
+input[class="timer"]:hover+#pick-time,
+input[class="timer"]:checked+#pick-time,
+input[class="timer"]:focus+#pick-time {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+#add_staff .add-patient_page form .row11{
+        grid-template-columns: repeat(3, 1fr);
+}
+
+#add_staff .add-patient_page form .row11, #add_staff .add-patient_page form .row13{
+    border: 1px solid var(--color-dark);
+    padding: .5rem;
+}
+
+#add_staff .add-patient_page form .row12{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#add_staff .add-patient_page form .row12 label, #add_staff .add-patient_page form .row13 label, #newvital .addvital-form form .row12 label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#add_staff .add-patient_page form .row13{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+
+#newvital .addvital-form form {
+    background: var(--color-white);
+    padding: .9rem;
+    box-shadow: var(--box-shadow);
+    margin-top: 1rem;
+}
+
+#newvital .addvital-form form .row12{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+#newvital .addvital-form form .row12 input{
+    padding: .5rem;
+}
+
+form input[type=submit] {
+    padding: 1rem;
+    border: none;
+    background: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+form input[type=submit]:hover {
+    box-shadow: var(--box-shadow);
+}
+
+#searchpatient .patient_profile_view form .submit1{
+    margin-top: 1rem;
+    padding: 1rem;
+    background: var(--color-primary);
+}
+
+#todayappoint .appointment-list{
+    background: var(--color-white);
+    margin-top: .9rem;
+    box-shadow: var(--box-shadow);
+    padding: .9rem;
+}
+
+#todayappoint .appointment-list .row40{
+    display: grid;
+    grid-template-columns: 5rem auto auto auto auto auto;
+    gap: .5rem;
+    border: 1px solid var(--color-dark);
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+#todayappoint .appointment-list .row40 input{
+    padding: .25rem;
+    width: 85%;
+}
+#todayappoint .appointment-list .row40 label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#eddcalculator .eddform{
+    background: var(--color-white);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+#eddcalculator .eddform form{
+    display: grid;
+    gap: .8rem;
+}
+
+#eddcalculator .eddform form .row50{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+#eddcalculator .eddform form .row50 input{
+    padding: .8rem;
+}
+
+#eddcalculator .eddform form .row50 label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+#manageappointment .manageapp{
+    background: var(--color-white);
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+#manageappointment .manageapp .appdetails, #manageappointment .manageapp .apphead, #todayappoint .appointment-list .appdetails,
+#todayappoint .appointment-list .apphead{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: .5rem;
+}
+
+#manageappointment .manageapp .appdetails .appimg, #todayappoint .appointment-list .appdetails .appimg{
+    height: 3rem;
+    width: 3rem;
+}
+
+#manageappointment .manageapp .appdetails, #todayappoint .appointment-list .appdetails{
+padding: 1rem .5rem;
+border: 1px solid var(--color-light);
+}
+
+#manageappointment .manageapp .appdetails:hover, #todayappoint .appointment-list .appdetails:hover{
+    background: var(--color-light);
+}
+
+#manageappointment .manageapp .appdetails .action{
+    color: red;
+}
+
+#todayappoint .appointment-list .appdetails .doctor{
+    color: red;
+}
+
+#manageappointment .manageapp .appdetails .action span{
+    padding: .6rem 2rem .6rem  .6rem;
+    cursor: pointer;
+}
+
+#manageappointment .manageapp .appdetails .action span:hover{
+    background: var(--color-danger);
+    background: red;
+    color: #fff;
+}
+
+#manageappointment .manageapp .apphead, #todayappoint .appointment-list .apphead{
+    margin-bottom: .6rem;
+}
+
+
+#billings .billing_slide{
+    background: var(--color-white);
+    padding: 2.5rem;
+    margin-top: .9rem;
+}
+
+#billings .billing_slide .billing_head, #billings .billing_slide form{
+    display: grid;
+    grid-template-columns: 6rem 15rem 10rem auto;
+    gap: 1rem;
+}
+
+#billings .billing_slide form{
+    margin-top: .9rem;
+    text-align: center;
+    border: 1px solid var(--color-danger);
+    padding: .3rem;
+    font-size: 1rem;
+}
+
+#billings .billing_slide form input{
+    padding: .5rem;
+    background: var(--color-light);
+    color: var(--color-dark);
+    font-weight: 600;
+    border: none;
+    font-size: 1rem;
+}
+
+#billings .operations{
+    padding: 1.2rem 2rem;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    margin-top: .7rem;
+    display: grid;
+    grid-template-columns: auto 10rem 10rem;
+}
+
+#billings .operations label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#billings .operations label input{
+    width: 30%;
+}
+
+#billings .operations input{
+    padding: .5rem;
+}
+
+#billings .operations button{
+width: 8rem;
+height: 3.2rem;
+cursor: pointer;
+background: var(--color-danger);
+color: #fff;
+border: none;
+font-weight: 600;
+border-radius: 4px;
+} 
+
+#billings .operations button:hover{
+    box-shadow: var(--box-shadow);
+}
+
+#addservice ,#upservice{
+    width: 35%;
+    background: var(--color-white);
+    position: absolute;
+    top: 6rem;
+    right: 7rem;
+    padding: 1.5rem;
+    padding-top: 2.7rem;
+    border: 1px solid var(--color-danger);
+    animation: addservice 400ms ease forwards;
+    display: none;
+}
+
+@keyframes addservice {
+    0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+}
+
+#addservice span, #upservice span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    color: #fff;
+    padding: .45rem;
+    cursor: pointer;
+}
+
+#addservice span:hover, #upservice span:hover{
+    box-shadow: var(--box-shadow);
+}
+
+#addservice form, #upservice form{
+    margin-top: .9rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#addservice form input, #upservice form input{
+    padding: .5rem;
+}
+
+#addservice form label, #upservice form label{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+#addservice form textarea, #upservice form textarea{
+    padding: .5rem;
+}
+
+#addaccount h2{
+    color: var(--color-danger);
+}
+
+
+#addaccount form #formOne{
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+#addaccount form #formOne .unverified{
+    background: red;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .2rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    display: none;
+}
+
+#addaccount form #formOne .verified{
+    background: green;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .2rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+    display: none;
+}
+
+
+#addaccount #formTwo{
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+#addaccount input[type=number], #addaccount input[type=text]{
+    padding: .5rem;
+}
+
+#addaccount #formTwo,
+#addaccount #formThree,
+#addaccount #formFour
+,#addaccount #formFive
+{
+    display: none;
+}
+
+#addaccount #formFour,
+#addaccount #formThree, #addaccount #formFive{
+    padding: 2rem;
+    margin-top: 1rem;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+#addaccount #formFour div, #addaccount #formThree div, #addaccount #formFive div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: .7rem;
+}
+
+/* #addaccount #formFour input[type=submit]{
+    width: 70%;
+} */
+
+#addaccount #formOne label, #addaccount #formTwo label, #addaccount #formThree label, #addaccount #formFour label, #addaccount #formFive div label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#addaccount #formFive div .remain{
+    grid-template-rows: 10% 90%;
+}
+
+#addaccount #formFive div label .plans {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#addaccount #formFive div label .plans .plan{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: .7rem;
+    padding: .5rem;
+    border: 1px solid var(--color-primary);
+}
+
+
+#upcomingpays .pays{
+    margin-top: 1rem;
+    padding: .9rem;
+}
+
+#upcomingpays .pays .payhead{
+    display: grid;
+    grid-template-columns: 8rem 7rem auto 10rem 6rem 5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 2rem;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    gap: 1rem;
+}
+
+#upcomingpays .pays .pay{
+    margin-top: .8rem;
+    display: grid;
+    grid-template-columns: 8rem 7rem auto 10rem 6rem 5rem;
+    background-color: var(--color-white);
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    text-align: left;
+    gap: 1rem;
+}
+
+#upcomingpays .pays .pay img{
+    height: 4rem;
+    width: 4rem;
+}
+
+#upcomingpays .pays .pay button{
+    width: 3rem;
+    cursor: pointer;
+    height: 3rem;
+    background: green;
+    color: #fff;
+    border: none;
+}
+
+#upcomingpays .pays .optional{
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.1rem;    
+}
+
+#patient_finance .patient_frecord, #finrecord .patient_frecord{
+    background: var(--color-white);
+    margin-top: .8rem;
+    padding: .5rem;
+}
+
+
+
+#patient_finance .finsearch:hover, #finrecord .finsearch:hover{
+    background: rgba(0, 128, 0, 0.635);
+}
+
+#patient_finance .patient_frecord .patient_acc, #finrecord .patient_frecord .patient_acc{
+    display: grid;
+    grid-template-columns: 6rem auto 9rem 12rem 12rem ;
+    gap: 2rem;
+    background: var(--color-light-pro);
+    padding: .7rem;
+}
+
+#patient_finance .patient_frecord .patient_acc img, #finrecord .patient_frecord .patient_acc img{
+    height: 6rem;
+    width: 6rem;
+}
+
+#patient_finance .patient_frecord .patient_acc .pics, #finrecord .patient_frecord .patient_acc .pics{
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+#patient_finance .patient_frecord .patient_acc .pics h2, #finrecord .patient_frecord .patient_acc .pics h2{
+    font-family: 'Graduate', cursive;
+    font-weight: 800;
+}
+
+#patient_finance .patient_frecord .patient_acc .pic1, #finrecord .patient_frecord .patient_acc .pic1{
+    padding: 1rem;
+}
+
+#patient_finance .patient_frecord .patient_acc .pic2, #patient_finance .patient_frecord .patient_acc .pic3, #finrecord .patient_frecord .patient_acc .pic2, #finrecord .patient_frecord .patient_acc .pic3{
+    /* background: var(--color-danger); */
+    border: 1.5px solid var(--color-danger);
+    padding: .7rem;
+    /* border-radius: .5rem; */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* color: var; */
+}
+
+#patient_finance .patient_frecord .patient_acc .pic2 h2, #finrecord .patient_frecord .patient_acc .pic2 h2{
+    color: var(--color-danger);
+}
+#patient_finance .patient_frecord .patient_acc .pic3 h2, #finrecord .patient_frecord .patient_acc .pic3 h2{
+    color: var(--color-primary);
+}
+
+#patient_finance .patient_frecord .patient_acc .pic3, #finrecord .patient_frecord .patient_acc .pic3{
+    /* background: var(--color-success); */
+    border: 1.5px solid var(--color-primary);
+}
+
+#patient_finance .patient_frecord .patient_acc button, #finrecord .patient_frecord .patient_acc button{
+    background: green;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    color: var(--color-white);
+    border-radius: .2rem;
+    margin-top: 1rem;
+    /* height: .9rem; */
+}
+
+#patient_finance .patient_frecord .patient_acc button:hover, #finrecord .patient_frecord .patient_acc button:hover{
+box-shadow: var(--box-shadow);
+}
+
+#patient_finance .records, #finrecord .records {
+    margin-top: .9rem;
+    display: none;
+    padding: .7rem;
+    background: var(--color-white);
+}
+
+#finrecord .records{
+    display: block;
+}
+
+#patient_finance .records .headTransrecord,
+#patient_finance #wrapuppop .record .transrecords, #finrecord .records .headTransrecord,
+#finrecord #wrapuppop .record .transrecords{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#patient_finance .records .headTransrecord .transID h3, #finrecord .records .headTransrecord .transID h3{
+    font-size: .9rem;
+}
+
+#patient_finance  #wrapuppop .record .transrecords, #finrecord #wrapuppop .record .transrecords{
+    margin-top: .4rem;
+    padding: .5rem;
+    background: var(--color-light-pro);
+}
+
+
+/* BLOGGER DASH */
+
+#allstaff .all-staff-page .blog{
+    padding: .7rem;
+    border: 1px solid var(--color-primary);
+    display: grid;
+    grid-template-columns: 7rem auto 12rem;
+    gap: .7rem;
+    margin-bottom: .8rem;
+    border-radius: .4rem;
+}
+
+#allstaff .all-staff-page .blog img{
+    width: 7rem;
+    height: 7rem;
+}
+
+#allstaff .all-staff-page .blog .blog_stats{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* #allstaff .all-staff-page .blog .blog_stats .blog_owner{
+    display: grid;
+    grid-template-columns: 70% 30%;
+} */
+
+
+#allstaff .all-staff-page .blog .blog_stats .blog_stat{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+}
+
+#allstaff .all-staff-page .blog .blog_stats .blog_stat .blog_stat1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+}
+
+#add_staff .add_blog_form form{
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .7rem;
+}
+
+#add_staff .add_blog_form form label{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* BLOGGER DASH */
+
+
+/* COMMENTS AND ENQUIRY */
+
+#showenquiry .enquiry_wrapper{
+    background: var(--color-white);
+    padding: 1rem;
+    margin-top: .9rem;
+}
+
+#showenquiry .enquiry_wrapper .the_enquiry{
+    display: grid;
+    grid-template-columns: 90% 7%;
+    gap: 1rem;
+    border-bottom: .5px solid var(--color-dark);
+    padding: .5rem;
+
+}
+#showenquiry .enquiry_wrapper .the_enquiry:last-child{
+    border-bottom: none;
+}
+
+#showenquiry .enquiry_wrapper .the_enquiry .first_side{
+    display: grid;
+    gap: 1rem;
+    border-right: 0.5px solid var(--color-light);
+    padding: .4rem;
+}
+
+
+#showenquiry .enquiry_wrapper .the_enquiry .first_side .enquire_details{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+}
+
+#showenquiry .enquiry_wrapper .the_enquiry .first_side .enquire_details .enquire_detail{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+#showenquiry .enquiry_wrapper .the_enquiry .first_side .enquire_details .enquire_detail span{
+    background: var(--color-success);
+    color: var(--color-white);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+
+#showenquiry .enquiry_wrapper .the_enquiry .sec_side {
+    display: flex;
+    align-items: center;
+}
+
+#showenquiry .enquiry_wrapper .the_enquiry .sec_side button{
+    background: none;
+    border: none;
+}
+
+#showenquiry .enquiry_wrapper .the_enquiry .sec_side span{
+    background: var(--color-danger);
+    color: var(--color-white);
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* COMMENTS AND ENQUIRY */
