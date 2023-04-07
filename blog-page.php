@@ -1,10 +1,5 @@
 <?php
 include "includes/head1.php";
-// if (isset($_SESSION['count'])) {
-//     $_SESSION['count'] = $_SESSION['count'] + 1;
-// } else {
-//     $_SESSION['count'] = 1;
-// }
 
 $post_id = stripslashes($_GET['id']);
 
@@ -20,7 +15,6 @@ if (isset($guest_ip)) {
     $sql125 = mysqli_query($conn, "insert into nhmh_blog_visits_db (visitor_ip, visit_date, post_id) values ('$guest_ip', '$post_time', '$post_id')");
 }
 
-// echo "<h1>This page is accessed</h1>" . $_SESSION['count'];
 
 
 $sql = mysqli_query($conn, "select * from nhmh_blogposts_db where post_id = '$post_id' ");

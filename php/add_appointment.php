@@ -65,7 +65,7 @@ if (empty($patient)) {
                 } else {
                     $whobooked = "Doctor";
                     // insert data into appointment database
-                    $sql3 = mysqli_query($conn, "insert into nhmh_patient_appointment_db(patient_id,app_date,app_time,doctor_to_see,purpose,comment,month,who_booked) values('$patient', '$date', '$apptime', '$doctor', '$purpose', '$comment', '$month', '$whobooked')");
+                    $sql3 = mysqli_query($conn, "insert into nhmh_patient_appointment_db(patient_id,app_date,app_time,doctor_to_see,purpose,comment,month,who_booked) values('$patient', '$date', '$apptime', '$`doctor`', '$purpose', '$comment', '$month', '$whobooked')");
 
                     if ($sql3) {
                         try {

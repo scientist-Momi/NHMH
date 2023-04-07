@@ -10,7 +10,6 @@ $sql = mysqli_query($conn, "select * from nhmh_staff_db where unique_id = '$user
 if (mysqli_num_rows($sql) > 0) {
     $staff_info = mysqli_fetch_assoc($sql);
 
-
     // counting the number of staff and getting their information
     $sql2 = mysqli_query($conn, "select * from nhmh_staff_db where not position = 'Admin' order by Staff_id");
     $staffcount = mysqli_num_rows($sql2);
@@ -264,7 +263,7 @@ if (mysqli_num_rows($sql) > 0) {
                         <h2>Activity Log</h2>
                         <div class="activity_display" id="activity">
 
-                            <?php include "php/display_user_log.php"; ?>
+                            <?php include "php/display_user_log.php" ?>
                             <!-- <div class="activity">
                                 <span class="material-icons-sharp">
                                     login

@@ -53,45 +53,6 @@ if (empty($title)) {
                     $sql1 = mysqli_query($conn, "insert into nhmh_blogposts_db (post_title,post_author,publish_date,content,post_photo) values('$title', '$author', '$publish_date', '$body', '$avatar_name') ");
 
                     if ($sql1) {
-                        //run program to send mail with details to patient.
-                        // $mail = new PHPMailer(true);
-
-                        //$mail->SMTPDebug = 2;
-                        // $mail->isSMTP();
-                        // $mail->Host = "momiwebs.com.ng";
-                        // $mail->SMTPAuth = false;
-                        // $mail->Username = 'admin@momiwebs.com.ng';
-                        // $mail->Password = 'Acrimony@22';
-                        // $mail->SMTPSecure = 'ssl';
-                        // $mail->Port = 465;
-
-                        // $mail->setFrom('admin@momiwebs.com.ng');
-
-                        // $mail->addAddress($email);
-
-                        // $mail->isHTML(true);
-
-                        // $mail->Subject = "New Horizon Maternity Hospital- New Staff.";
-
-                        // $mail->Headers = array(
-                        //     "MIME-Version" => "1.0",
-                        //     "Content-Type" => "text/html;charset=UTF-8"
-                        // );
-
-                        // $mail->Body = file_get_contents("../staff-welcome-msg.php");
-
-                        // $swap_var = array(
-                        //     "{staff_username}" => "$username",
-                        //     "{staff_password}" => "$password"
-                        // );
-
-                        // foreach (array_keys($swap_var) as $key) {
-                        //     if (strlen($key) > 2 && trim($key) != "") {
-                        //         $mail->Body = str_replace($key, $swap_var[$key], $mail->Body);
-                        //     }
-                        // }
-
-                        // $mail->send();
 
                         echo "Successful";
                     } else {
